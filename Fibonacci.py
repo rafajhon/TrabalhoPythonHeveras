@@ -1,8 +1,8 @@
-def soma_fib(fibb):
+def fibonacci(fibb):
     if fibb < 2:
         return fibb
-    f = soma_fib(fibb-1) + soma_fib(fibb-2)
+    f = fibonacci(fibb-1) + fibonacci(fibb-2)
     return f
 if __name__ == "__main__":
     fibb = int(input("entre com um numero"));
-    print('fibbonaci (%d) =  %d'%(fibb,soma_fib(fibb)))
+    print('fibonacci (%d) =  %d'%(fibb,fibonacci(fibb)))
